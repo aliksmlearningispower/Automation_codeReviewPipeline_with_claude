@@ -9,7 +9,7 @@ on:
 jobs:
 
   review:
-
+    name: Groq Code Review
     runs-on: ubuntu-latest
 
     permissions:
