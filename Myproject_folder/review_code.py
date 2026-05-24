@@ -54,3 +54,16 @@ print(review)
 
 with open("review.txt", "w") as f:
     f.write(review)
+
+critical_keywords = [
+    "syntax error",
+    "hardcoded password",
+    "sql injection"
+]
+
+for keyword in critical_keywords:
+    if keyword.lower() in review.lower():
+        print(f"Critical issue found: {keyword}")
+        sys.exit(1)
+
+print("No critical issues found")
