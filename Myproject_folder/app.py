@@ -11,7 +11,7 @@ app = FastAPI()
 # Root endpoint
 @app.get("/")
 async def read_root():
-    return {"message": "Gnani nerchukuntu jeevinch apai gnaname nennu poshinchu, Rakshinchu, meruguparuchu, balaparuchu and lot many more"}
+    return {"message": "Gyani nerchukuntu jeevinch apai gnaname nennu poshinchu, Rakshinchu, meruguparuchu, balaparuchu and lot many more"}
 
 # Endpoint with a path parameter
 @app.get("/items/{item_id}")
