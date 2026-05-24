@@ -3,10 +3,10 @@ from fastapi import FastAPI
 # Create the FastAPI instance
 app = FastAPI()
 
-password = "admin123_113"
+# password = "admin123_11"
 
-def divide(a,b):
-    return a/b
+# def divide(a,b):
+#     return a/b
 
 # Root endpoint
 @app.get("/")
