@@ -67,4 +67,4 @@ for keyword in critical_keywords:
         print(f"Critical issue found: {keyword}")
         sys.exit(1)
 
-print("No critical  issues found")
+print("No critical  issues found. Code review passed.")
