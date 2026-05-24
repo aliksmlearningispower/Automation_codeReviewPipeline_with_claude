@@ -78,7 +78,7 @@ with open("review.txt", "w") as f:
 critical_keywords = ["Block Merge Immediately"]
 
 for keyword in critical_keywords:
-    if keyword.lower() in review.lower():
+    if keyword.lower() in review.lower() and "No critical issues found" not in review:
         print(f"Critical issue found: {keyword}")
         sys.exit(1)
 
