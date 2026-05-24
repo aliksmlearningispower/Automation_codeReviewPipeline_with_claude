@@ -1,6 +1,7 @@
 import os
 import subprocess
 from groq import Groq
+import sys
 
 client = Groq(
     api_key=os.environ["GROQ_API_KEY"]
