@@ -6,8 +6,18 @@ client = Groq(
     api_key=os.environ["GROQ_API_KEY"]
 )
 
+# diff = subprocess.check_output(
+#     ["git", "diff", "origin/main...HEAD"]
+# ).decode()
+
+print(
+    subprocess.check_output(
+        ["git", "branch", "-a"]
+    ).decode()
+)
+
 diff = subprocess.check_output(
-    ["git", "diff", "origin/main...HEAD"]
+    ["git", "diff", "HEAD~1", "HEAD"]
 ).decode()
 
 prompt = f"""
