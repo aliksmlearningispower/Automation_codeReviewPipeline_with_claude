@@ -9,7 +9,7 @@ app = FastAPI()
 #     return a/b
 
 # Root endpoint
-@app.get("/"
+@app.get("/")
 async def read_root():
     return {"message": "Gnani nerchukuntu jeevinch apai gnaname nennu poshinchu, Rakshinchu, meruguparuchu, balaparuchu and lot many more"}
 
