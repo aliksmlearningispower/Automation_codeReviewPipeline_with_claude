@@ -3,7 +3,7 @@ from fastapi import FastAPI
 # Create the FastAPI instance
 app = FastAPI()
 
-password = "admin123_"
+password = "admin123_113"
 
 def divide(a,b):
     return a/b
