@@ -3,14 +3,14 @@ from fastapi import FastAPI
 # Create the FastAPI instance
 app = FastAPI()
 
-password = "admin123_11"
+# password = "admin123_11"
 
-def divide(a,b):
-    return a/b
+# def divide(a,b):
+#     return a/b
 
 # Root endpoint
 @app.get("/")
-async def read_root(:
+async def read_root():
     return {"message": "Gnani nerchukuntu jeevinch apai gnaname nennu poshinchu, Rakshinchu, meruguparuchu, balaparuchu and lot many more"}
 
 # Endpoint with a path parameter
