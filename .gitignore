@@ -1,0 +1,4 @@
+Myproject_folder/venv/
+__pycache__/
+*.pyc
+.env
